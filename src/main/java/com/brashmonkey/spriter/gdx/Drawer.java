@@ -41,9 +41,9 @@ public class Drawer extends com.brashmonkey.spriter.Drawer<Sprite> {
 	public void draw(Object object) {
 		Sprite sprite = loader.get(object.ref);
 		float newPivotX = (sprite.getWidth() * object.pivot.x);
-		float newX = object.position.x - newPivotX;
+		float newX = object.position.x;
 		float newPivotY = (sprite.getHeight() * object.pivot.y);
-		float newY = object.position.y - newPivotY;
+		float newY = object.position.y;
 		
 		sprite.setX(newX);
 		sprite.setY(newY);
